@@ -41,44 +41,5 @@ public class ServletList extends HttpServlet {
         }else {
             pw.print(gson.toJson("ID не должен быть меньше нуля"));
         }
-
-//        if(id==0){
-//            pw.print("<html>" +
-//                    "<h3>Доступные пользователи:</h3><br/>" +
-//                    "ID пользователя: " +
-//                    "<ul>");
-//
-//            for(Map.Entry<Integer, User> entry : model.getFromList().entrySet()) {
-//                pw.print("<li>" + entry.getKey() + "</li>" +
-//                        "<ul" +
-//                        "<li>Имя: " + entry.getValue().getName() + "</li>" +
-//                        "<li>Фамилия: " + entry.getValue().getSurname() + "</li>" +
-//                        "<li>Зарплата: " + entry.getValue().getSalary() + "</li>" +
-//                        "</url>");
-//            }
-//            pw.print("</ul>" +
-//                    "<a href=\"index.jsp\">Домой</a>" +
-//                    "</html>");
-//        }else if(id>0){
-//            if(id>model.getFromList().size()) {
-//                pw.print("<html>"+
-//                        "<h3>Такого пользователя нет :(</h3>" +
-//                        "<a href=\"index.jsp\">Домой</a>" +
-//                        "</html>");
-//            }else {
-//                pw.print("<html>" +
-//                        "<h3>Запрошенный пользователь</h3>" +
-//                        "<br/>" +
-//                        "Имя: " + model.getFromList().get(id).getName() + "<br/>" +
-//                        "Фамилия: " + model.getFromList().get(id).getSurname() + "<br/>" +
-//                        "Зарплата: " + model.getFromList().get(id).getSalary() + "<br/>" +
-//                        "<a href=\"index.jsp\">Домой</a>" +
-//                        "</html>");
-//            }
-//        } else {
-//            pw.print("<html>" +
-//                    "<h3>ID должен быть больше нуля!</h3>" +
-//                    "<a href=\"index.jsp\">Домой</a>" +
-//                    "</html>");
        }
     }
